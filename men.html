@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Collection</title>
+
+    <link rel="stylesheet" href="css/men.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body> 
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            REAL BOUTIQUE
+        </div>
+
+        <ul class="nav-links"  id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="bridal.html">Bridal</a></li>
+            <li><a href="jewellery.html">Jewellery</a></li>
+            <li><a href="footwear.html">footwear</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-bag"></i>
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+
+    </nav>
+
+    <section class="hero">
+        <h1>Men's Collection</h1>
+        <p>Sherwani • Kurta • Blazer • Indo Western</p>
+    </section>
+
+    <section class="products">
+
+        <h2>Premium Collection</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.7liYwZkLCy6nLIPJL9ZfzQHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>Royal Sherwani</h3>
+                <p>₹7,999</p>
+
+                <div class="buttons">
+                  <button >❤️</button>
+                  <button >🛒 Add Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img-va.myshopline.com/image/store/1673510743425/Luxury-Appliques-Beads-One-Piece-Blazer-Tuxedo-Men-Suits-One-Button-Velvet-Wide-Lapel-Formal-Wedding.jpg?w=1200&h=1200">
+                <h3>Designer Blazer</h3>
+                <p>₹5,999</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/73/82/f7/7382f71df2f1c36cf2ba453322723895.jpg">
+                <h3>Tshirt</h3>
+                <p>₹4,999</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://manyavar.scene7.com/is/image/manyavar/I02_SRP-301+copy_15-11-2021-20-28:650x900">
+                <h3>Indo Western</h3>
+                <p>₹6,499</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="https://www.reviewtique.com/wp-content/uploads/2024/12/black-formal-suit-for-men.webp">
+                <h3>Formal</h3>
+                <p>₹499</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.XyV4qMs2M1asF3_vTlmEbgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>jeans</h3>
+                <p>₹999</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.qAjQ3fX8zS6uYYOC12TCGQHaIr?r=0&w=845&h=990&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3>hoodies & sweatshirts</h3>
+                <p>₹6,499</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+
+              <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81ELtAf9uKL._UL1500_.jpg">
+                <h3>casual shirts</h3>
+                <p>₹399</p>
+
+                <div class="buttons">
+                    <button >❤️</button>
+                    <button >🛒 Add Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    console.log(menuToggle);
+    console.log(navLinks);
+
+    menuToggle.addEventListener("click", function(){
+        navLinks.classList.toggle("active");
+    });
+
+});
+
+</script>
+</body>
+
+</html>

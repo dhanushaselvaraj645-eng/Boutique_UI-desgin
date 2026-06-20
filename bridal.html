@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bridal Collection</title>
+
+<link rel="stylesheet" href="css/bridal.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+ <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            REAL BOUTIQUE
+        </div>
+
+        <ul class="nav-links active" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="bridal.html">Bridal</a></li>
+            <li><a href="jewellery.html">Jewellery</a></li>
+            <li><a href="footwear.html">footwear</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="nav-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+
+    <div class="menu-toggle" id="menuToggle">
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+       
+
+
+    </nav>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>Luxury Bridal Collection</h1>
+<p>Create Your Dream Wedding Look</p>
+</div>
+
+</section>
+
+<section class="bridal-gallery">
+
+<h2>Featured Bridal Looks</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/2a/75/f4/2a75f47a616e421f4fc40bba7eec200d.jpg">
+<h3>Royal Bridal Saree</h3>
+</div>
+
+<div class="card">
+<img src="https://getethnic.com/wp-content/uploads/2020/05/South-Indian-Wedding-Saree-7.jpeg">
+<h3>Reception Look</h3>
+</div>
+
+<div class="card">
+<img src="https://tse2.mm.bing.net/th/id/OIP.s0YJ7qzxh4nuyzzM8zmw9QHaKZ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+<h3>Wedding Lehenga</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="booking-section">
+
+<h2>Book Bridal Consultation</h2>
+
+<form class="booking-form">
+
+<input type="text"
+placeholder="Full Name"
+required>
+
+<input type="tel"
+placeholder="Phone Number"
+required>
+
+<input type="email"
+placeholder="Email Address"
+required>
+
+<input type="date"
+required>
+
+<textarea
+placeholder="Wedding Details"
+rows="5"></textarea>
+
+<button type="submit">
+Book Appointment
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>REAL BOUTIQUE</h3>
+
+<p>Luxury Bridal Styling & Wedding Fashion</p>
+
+        <div class="socials">
+
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+
+menuToggle.addEventListener("click", function(){
+
+navLinks.classList.toggle("active");
+
+});
+
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>

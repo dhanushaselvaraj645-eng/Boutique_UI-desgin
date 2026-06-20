@@ -1,0 +1,256 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#faf7f2;
+}
+
+.navbar{
+background:#ffffff;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#8b5e3c;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#2b2b2b;
+}
+.nav-links a:hover{
+    color:#c9a227;
+}
+.hero{
+height:80vh;
+background:url('https://tse2.mm.bing.net/th/id/OIP.R2QxtiFZnRguU-e9mWirzwHaIA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3')
+center/cover;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0, 0, 0, 0.5);
+}
+
+.hero-content{
+position:relative;
+color:white;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+}
+
+.bridal-gallery{
+padding:80px 8%;
+}
+
+.bridal-gallery h2{
+text-align:center;
+margin-bottom:40px;
+font-size:45px;
+color:#8b5e3c;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#ffffff;
+border-radius:18px;
+overflow:hidden;
+border:1px solid #e8e2d8;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:450px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+text-align:center;
+color:#2b2b2b;
+}
+
+.booking-section{
+padding:100px 8%;
+background:#8b5e3c;
+color:#ffffff;
+text-align:center;
+}
+
+.booking-section h2{
+font-size:50px;
+margin-bottom:40px;
+}
+
+.booking-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.booking-form input,
+.booking-form textarea{
+padding:15px;
+border:1px solid #d1b78b;
+border-radius:10px;
+background-color: #ffffff;
+}
+
+.booking-form button{
+padding:15px;
+border:none;
+background:#c9a227;
+color:#ffffff;
+font-weight:700;
+font-size:18px;
+cursor:pointer;
+border-radius:10px;
+}
+.booking-form button:hover{
+    background:#a8841e;
+}
+footer{
+background:#2b2b2b;
+color:#ffffff;
+text-align:center;
+padding:30px;
+}
+
+footer h3{
+color:#c9a227;
+margin-bottom:10px;
+}
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#8b5e3c;
+}
+
+
+
+@media(max-width:900px){
+
+
+.navbar{
+    position:relative;
+}
+
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+
+
+.nav-icons{
+
+    display:none;
+
+}
+
+
+
+.nav-links{
+
+display:none !important;
+
+position:absolute;
+top:90px;
+left:0;
+
+width:100%;
+
+background:#ffffff;
+
+flex-direction:column;
+
+gap:30px;
+
+padding:20px ;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+z-index:999;
+
+
+}
+
+
+
+.nav-links.active{
+
+    display:flex !important;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:28px;
+
+}
+
+
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+.bridal-gallery h2{
+    font-size: 23px;
+}
+.card {
+    width: 90%;
+}
+
+.booking-section h2{
+    font-size: 21px;
+}
+}

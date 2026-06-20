@@ -1,0 +1,190 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#FAF7F2;
+}
+
+.navbar{
+background:#FFFFFF;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#8B5E3C;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#2B2B2B;
+}
+.nav-links a:hover{
+    color:#C9A227;
+}
+
+.hero{
+height:50vh;
+background:url('https://png.pngtree.com/thumb_back/fw800/background/20240912/pngtree-a-row-of-men-s-suits-in-different-colors-and-patterns-image_16175792.jpg')
+center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.products{
+padding:80px 8%;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color:#8B5E3C;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:#FFFFFF;
+border:1px solid #ede296;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.product-card h3{
+padding:15px;
+color:#2B2B2B;
+}
+
+.product-card p{
+padding:0 15px 15px;
+font-weight:600;
+color:#8B5E3C;
+}
+
+.buttons{
+padding:15px;
+display:flex;
+gap:10px;
+}
+.buttons button{
+border:none;
+padding:12px;
+cursor:pointer;
+background:#C9A227;
+font-weight:600;
+color:#FFFFFF;
+border-radius:8px;
+}
+.buttons button:hover{
+    background-color:#a8841e;
+}
+
+
+/* HAMBURGER */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#8B5E3C;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+    padding:15px 6%;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+     display:none;
+    flex-direction:column;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.nav-icons{
+    display:none;
+}
+
+.hero{
+    height:80vh;
+}
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:10px;
+    line-height:1.6;
+}
+
+.products h2{
+    font-size:25px;
+}
+
+
+
+
+
+}
